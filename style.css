@@ -25,7 +25,40 @@
 border: 2px solid green;
 height: 90%;
 width: 20%;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
+.menuicon{
+    /* border: 2px solid red; */
+    height: 76%;
+    width: 16%;
+}
+.menuicon button{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    background-color: white;
+    border: none;
+}
+.menuicon button img{
+    height: 80%;
+    width: 80%;
+}
+.menuicon button:hover{
+    cursor: pointer;
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+.logo{
+    border: 2px solid red;
+    height: 90%;
+    width: 78%;
+    display: flex;
+    flex-direction: row;
+}
+
 .navbar-middele{
 /* border: 2px solid green; */
 height: 90%;
@@ -90,24 +123,131 @@ overflow-y: scroll;
 }
 
 .leftScrool-homeConatiner{
-border: 2px solid darkturquoise;
+/* border: 2px solid darkturquoise; */
 height:30% ;
 width: 100%;
+display: flex;
+flex-direction: column;
+/* justify-content: space-around; */
+align-items: center;
+}
+.leftScroolList ul{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+list-style-type: none;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+font-size: 20px;
+font-family:  'Trebuchet MS', sans-serif;
+/* align-items: center; */
+}
+.leftScroolList ul li{
+    /* border: 2px solid black; */
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    
+}
+.leftScroolList ul li img{
+    /* height: 94%; */
+    width: 9%;
+    margin-right: 1.5rem;
+    margin-left: 3rem;
+}
+.leftScroolList ul li:hover{
+    cursor: pointer;
+    background-color: lightgrey;
+    border-radius: 50px;
+    /* transition: width 2s, height 4s; */
+    /* transition: width 2s, height 2s, transform 2s; */
+    /* transition: delay 1px; */
 }
 .leftScrool-historyConatiner{
-border: 2px solid darkturquoise;
-height: 50%;
+/* border: 2px solid darkturquoise; */
+height: 45%;
 width: 100%;
 }
 .leftScrool-subscriptionCotatiner{
 border: 2px solid darkturquoise;
 height:60% ;
 width: 100%;
+overflow-y: scroll;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+.leftScrool-subscriptionCotatiner p{
+    height: 8%;
+    width: 100%;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    margin-top: .5rem;
+    /* border: 2px solid red; */
+    /* position: relative; */
+}
+.leftScrool-subscriptionCotatiner ul{
+/* border: 2px solid red; */
+/* position: absolute; */
+width: 100%;
+height: fit-content;
+list-style-type: none;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+font-size: 20px;
+font-family:  'Trebuchet MS', sans-serif;
+/* align-items: center; */
+}
+.leftScrool-subscriptionCotatiner ul li{
+  /* border: 2px solid black; */
+  padding: .5rem 1rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+}
+.leftScrool-subscriptionCotatiner ul li img{
+    width: 2rem;
+    margin-right: 1.5rem;
+    margin-left: 3rem;
 }
 .leftScrool-ExploreContatiner{
 border: 2px solid darkturquoise;
-height:80% ;
+height:90% ;
 width: 100%;
+}
+.leftScrool-ExploreContatiner p{
+    /* border: 2px solid red; */
+    height: 8%;
+    width: 100%;
+    font-size: 1.4rem;
+    margin-left: 2.4rem;
+    margin-top: .5rem;
+}
+.leftScrool-ExploreContatiner ul{
+    /* border: 2px solid red; */
+    width: 100%;
+height: 90%;
+list-style-type: none;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+font-size: 20px;
+font-family:  'Trebuchet MS', sans-serif;
+}
+.leftScrool-ExploreContatiner ul li{
+    /* border: 2px solid red; */
+    padding: .5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+.leftScrool-ExploreContatiner ul li img{
+    width: 2rem;
+    margin-right: 1.5rem;
+    margin-left: 3rem;
 }
 .display-rightScrool{
 border: 2px solid darkmagenta;
@@ -129,10 +269,16 @@ padding: .5rem 1rem ;
 width: fit-content;
 /* text-overflow: ellipsis; */
 white-space: nowrap;
+font-family:  'Trebuchet MS', sans-serif;
 background-color: lightgray;
 border-radius: 10px;
 margin: .5rem;
 
+}
+.rightScrool-topContainer p:hover{
+    cursor: pointer;
+    background-color: black;
+    color:white
 }
 .rightScrool-bottomcontainer{
   border: 2px solid darkgreen;
