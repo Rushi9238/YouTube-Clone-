@@ -10,7 +10,7 @@
     border: 2px solid red;
     height: 100vh;
     width: 100vw;
-    padding: 10px 5px;
+    /* padding: 10px 5px; */
 
 }
 .navbar{
@@ -22,7 +22,7 @@
     align-items: center;
 }
 .navbar-leftside{
-border: 2px solid green;
+/* border: 2px solid green; */
 height: 90%;
 width: 20%;
 display: flex;
@@ -52,13 +52,28 @@ align-items: center;
 }
 
 .logo{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 90%;
     width: 78%;
     display: flex;
     flex-direction: row;
 }
-
+.logo:hover{
+    cursor: pointer;
+    background-color: rgb(247,243,243);
+    border-radius: 15px;
+    /* color: white; */
+}
+.logo .title{
+    font-size: 2rem;
+    margin-top: .8rem;
+    margin-left: .4rem;
+}
+.logo .in-upperOfTitle{
+    font-size: 14px;
+     margin-top: .4rem; 
+     margin-left: .3rem;
+}
 .navbar-middele{
 /* border: 2px solid green; */
 height: 90%;
@@ -110,18 +125,21 @@ height: 90%;
 width: 20%;
 }
 .displayContainer{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     height: 88%;
     width: 100%;
     display: flex;
 }
 .display-leftScrool{
-border: 2px solid darkmagenta;
+/* border: 2px solid darkmagenta; */
 height: 100%;
 width: 20%;
 overflow-y: scroll;
 }
-
+.display-leftScrool hr{
+    width: 90%;
+   margin-left: 1rem;
+}
 .leftScrool-homeConatiner{
 /* border: 2px solid darkturquoise; */
 height:30% ;
@@ -171,7 +189,7 @@ height: 45%;
 width: 100%;
 }
 .leftScrool-subscriptionCotatiner{
-border: 2px solid darkturquoise;
+/* border: 2px solid darkturquoise; */
 height:60% ;
 width: 100%;
 overflow-y: scroll;
@@ -186,6 +204,7 @@ justify-content: space-between;
     font-size: 1.4rem;
     margin-left: 2rem;
     margin-top: .5rem;
+    font-weight: 550;
     /* border: 2px solid red; */
     /* position: relative; */
 }
@@ -207,15 +226,16 @@ font-family:  'Trebuchet MS', sans-serif;
   padding: .5rem 1rem;
   display: flex;
   align-items: center;
+  white-space: nowrap;
   /* justify-content: space-evenly; */
 }
 .leftScrool-subscriptionCotatiner ul li img{
     width: 2rem;
-    margin-right: 1.5rem;
-    margin-left: 3rem;
+    margin-right: 2rem;
+    margin-left: 1.5rem;
 }
 .leftScrool-ExploreContatiner{
-border: 2px solid darkturquoise;
+/* border: 2px solid darkturquoise; */
 height:90% ;
 width: 100%;
 }
@@ -224,6 +244,7 @@ width: 100%;
     height: 8%;
     width: 100%;
     font-size: 1.4rem;
+    font-weight: 550;
     margin-left: 2.4rem;
     margin-top: .5rem;
 }
@@ -280,8 +301,77 @@ margin: .5rem;
     background-color: black;
     color:white
 }
-.rightScrool-bottomcontainer{
+.rightScrool-videocontainer{
   border: 2px solid darkgreen;
   height:90% ;
   width: 100%;  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* margin: 1rem; */
+  overflow-y: scroll;
+}
+
+.video{
+    /* border: 2px solid red; */
+    height: 45%;
+    width: 23%;
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    margin: .5rem;
+    transition: all 1s ease-in-out;
+}
+.video:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    /* transform: rotate3d(1,2,3,10deg); */
+    /* transform:rotate3d(1,2,3,10deg) scale(1.2); */
+    /* transform:  rotatez(8deg) scale(1.2); */
+    /* transform: scale3d(1.2, 1.5, 1.0); */
+    /* transform: translate3d(12px, 50%, 3em); */
+}
+.video iframe{
+    /* border: 2px solid blue; */
+    height: 60%;
+    width: 100%;
+    border-radius: 10px;   
+}
+
+.video-contain{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.video-contain-lefticon{
+    /* border: 2px solid black; */
+    height: 100%;
+    width: 22%;
+}
+.video-contain-righttext{
+    /* border: 2px solid black; */
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.video-contain-lefticon img{
+    /* border: 2px solid red; */
+    display: inline-block;
+    width: 86%;
+    margin-top:.5rem;
+    margin-left: .5rem;   
+}
+.video-contain-righttext p{
+    /* border: 2px solid red; */
+   font-size: 15px;
+   font-weight: 600;
+}
+.video-contain-righttext span{
+    /* border: 2px solid red; */
+    font-size: 15px;
 }
